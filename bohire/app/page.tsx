@@ -7,21 +7,19 @@ export default function Home() {
       <section className="container mx-auto px-6 py-20 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Your work speaks for itself.
+            Never send another
             <br />
-            <span className="gradient-text">Now prove it.</span>
+            <span className="gradient-text">resume again.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-12">
-            Build a verified professional profile powered by World ID, real GitHub analysis, and AI-generated resume.
-            <br />
-            No fake profiles. No self-reported fluff. Just proof of work.
+            Connect GitHub. Let your code speak. Recruiters come to you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/onboard"
               className="px-8 py-4 bg-gradient-to-r from-green to-teal rounded-lg text-lg font-medium hover:opacity-90 transition-opacity"
             >
-              Get Verified
+              Get started
             </Link>
             <Link
               href="#how-it-works"

@@ -1,6 +1,6 @@
 # BoHire
 
-**Proof of work, not just claims.**
+**Never send another resume again.**
 
 BoHire is a candidate verification platform that lets job candidates build verified professional profiles. Built on the Bolospot protocol, it combines World ID verification, real GitHub analysis, and AI-generated resumes to create authentic, trustworthy developer profiles.
 
