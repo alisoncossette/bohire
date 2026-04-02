@@ -8,6 +8,7 @@ export interface CandidateProfile {
   linkedinData?: LinkedInProfile;
   aiAssessment?: AIAssessment;
   aiResume?: string;
+  evidenceProfile?: EvidenceProfile;
   handle: string;
   createdAt: string;
 }
@@ -68,4 +69,45 @@ export interface OnboardingStep {
   description: string;
   completed: boolean;
   current: boolean;
+}
+
+export interface EvidenceProfile {
+  languages: LanguageEvidence[];
+  topRepositories: RepositoryEvidence[];
+  commitPatterns: CommitPatterns;
+  collaborationScore: number; // 0-100
+  problemDomains: string[];
+  totalCommits: number;
+  analyzedRepos: number;
+  privateReposIncluded: boolean;
+  generatedAt: string;
+  signature: string;
+  aiSummary?: string; // Natural language summary from Claude
+}
+
+export interface LanguageEvidence {
+  name: string;
+  commitCount: number;
+  linesChanged: number;
+  percentage: number;
+}
+
+export interface RepositoryEvidence {
+  name: string;
+  commits: number;
+  linesAdded: number;
+  linesDeleted: number;
+  complexityScore: number; // 0-100
+  primaryLanguage?: string;
+  isPrivate: boolean;
+  url?: string;
+  description?: string;
+}
+
+export interface CommitPatterns {
+  consistency: number; // 0-100, based on commit frequency variance
+  averageCommitsPerWeek: number;
+  averageCommitSize: number; // lines changed
+  longestStreak: number; // days
+  lastActiveDate: string;
 }
